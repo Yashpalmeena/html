@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box; margin: 0; padding: 0;}
+		.main
+		{
+			height: 800px;
+			width: 100%;
+			background: ;
+			display: flex;
+		}
+
+		/*HEADER START*/
+
+		.main .main1
+		{
+			height: 800px;
+			width: 50%;
+			background: ;
+
+			
+
+			
+		}
+		.main .main1 .header1
+		{
+			height: 100px;
+			font-size: 25px;
+			font-weight: bold;
+			padding-left: 100px;
+			line-height: 100px;
+			
+			
+
+		}
+
+		/*HEADER END*/
+
+
+        
+
+
+        /*START CONTANT*/
+		.main .main1 .content
+		{
+			height: 700px;
+			width: 100%;
+			background: ;
+			
+			position: relative;
+		}
+
+        .main .main1 .content .c1
+        {
+        	height: 700px;
+        	width: 100%;
+        	position: absolute;
+        	padding: 50px 0 0 100px;
+        	background: ;
+        	z-index: 1;
+        	opacity: 1;
+        	animation: test1 2s infinite;
+        }
+        .main .main1 .content .c2
+        {
+        	height: 700px;
+        	width: 100%;
+        	background: ;
+        	padding: 50px 0 0 100px;
+            position: absolute;
+            z-index: 0;
+        	opacity: 0;
+        	animation: test2 2s infinite;
+        }
+		
+
+		.main .main1 .content h1
+		{
+			font-size: 40px;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+
+		.main .main1 .content p
+		{
+			margin-bottom: 20px;
+		}
+
+		.main .main1 .content .images
+		{
+			height: 200px;
+			width: 100%;
+			
+			display: flex;
+		}
+		.main .main1 .content .images .img1
+		{
+			width: 33.33%;
+			
+			text-align: center;
+			
+
+
+		}
+
+		.main .main1 .content .images .img2
+		{
+			width: 33.33%;
+			
+			text-align: center;
+
+
+		}
+		.main .main1 .content  .images .img3
+		{
+			width: 33.33%;
+			
+			text-align: center;
+
+        }
+
+        .main .main1 .content  .images img
+        {
+        	border-radius: 50%;
+        }
+       
+
+
+       .main .main1 .content button
+       {
+       	background: red;
+       	height: 40px;
+       	width: 100px;
+       	line-height: 40px;
+       	border-radius: 5px;
+       	border: none;
+       }
+
+
+		
+       	.main .x
+		{
+			height: 800px;
+			width: 50%;
+			background: url(https://technext.github.io/kusina/images/bg_2.jpg);
+			padding-top: 25px;
+			background-size: 100% 100%;
+			animation: x1 2s infinite;
+
+		}
+
+		.main .x ul li
+		{
+			list-style: none;
+			display: inline;
+			margin-left: 40px;
+			font-size: 17px;
+			color: #fff;
+
+
+		}
+		.main .x ul li:hover
+		{
+			color: black;
+		}
+
+		@keyframes x1
+		{
+			from{background: url(https://technext.github.io/kusina/images/bg_2.jpg); background-size: 100% 100%}
+		     to{background: url(https://technext.github.io/kusina/images/bg_3.jpg); background-size: 100% 100%}
+		
+		}
+
+
+
+	
+
+       @keyframes test1
+       {
+       	 from{z-index: 0;opacity: 0}
+       	 to{z-index: 1;opacity: 1}
+       }
+       @keyframes test2
+       {
+       	 from{z-index: 1;opacity: 1}
+       	 to{z-index: 0;opacity: 0}
+       }
+
+  
+
+
+       <!-- END CONTENT -->
+
+       
+
+
+     
+      
+
+
+
+
+
+	</style>
+
+	
+
+
+
+
+</head>
+<body>
+	<div class="main">
+
+
+		
+		<div class="main1">
+
+			<!-- HEADER START PAGE1 -->
+
+
+			<div class="header">
+				<div class="header1">Kusina</div>
+			</div>
+
+
+			<!-- HEADER END PAGE1 -->
+
+			    
+
+
+			    <!-- CONTENT START PAGE1 -->
+
+           <div class="content">
+
+
+
+
+			<div class="c1">
+				
+				<h1>We Love <br>Delicious Foods</h1>
+				<p>A small river named duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country. </p>
+
+				<div class="images">
+					<div class="img1">
+						<img src="https://technext.github.io/kusina/images/menu-1.jpg" height="150px" width="150px">
+						<p>Australian Organic Beef</p>
+					</div>
+					<div class="img2">
+						<img src="https://technext.github.io/kusina/images/menu-2.jpg" height="150px" width="150px">
+						<p>Australian Organic Beef</p>
+					</div>
+					<div class="img3">
+						<img src="https://technext.github.io/kusina/images/menu-3.jpg" height="150px" width="150px">
+						<p>Australian Organic Beef</p>
+					</div>
+
+					
+	
+			</div>
+			<div class="button">
+						<button>Book A Table</button>
+					</div>
+			</div>
+
+
+
+
+			<!-- CONTENT END PAGE1 -->
+
+
+
+
+
+
+             <!-- CONTENT START PAGE2 -->
+
+			<div class="c2">
+				
+                
+				<h1>Eat Healthy<br>And Natural Foods</h1>
+				<p>A small river named duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country. </p>
+
+				<div class="images">
+					<div class="img1">
+						<img src="https://technext.github.io/kusina/images/menu-1.jpg" height="150px" width="150px">
+						<p>Australian Organic Beef</p>
+					</div>
+					<div class="img2">
+						<img src="https://technext.github.io/kusina/images/menu-2.jpg" height="150px" width="150px">
+						<p>Australian Organic Beef</p>
+					</div>
+					<div class="img3">
+						<img src="https://technext.github.io/kusina/images/menu-3.jpg" height="150px" width="150px">
+						<p>Australian Organic Beef</p>
+					</div>
+
+					
+	
+			</div>
+			<div class="button">
+						<button>Book A Table</button>
+					</div>
+
+			</div>
+
+           </div>
+			 
+
+
+			 <!-- CONTENT END PAGE2 -->
+		
+
+		</div>
+
+
+		    
+		
+
+
+
+		<div class="x">
+			<div class="list">
+			<ul>	
+				<li style="color: red">Home</li>
+				<li>About</li>
+				<li>Specialties</li>
+				<li>Reservation</li>
+				<li>Stories</li>
+				<li>Contact</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
