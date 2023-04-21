@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+</head>
+<body>
+
+    <img src="https://images2.alphacoders.com/589/thumb-1920-589553.png" alt="" height="600px" width="100%" class="yash">
+    <img src="https://cdn-www.comingsoon.net/assets/uploads/2018/07/ifninity-war-334.jpg" alt="" height="600px" width="100%" class="yash">
+    <img src="https://m.media-amazon.com/images/I/91rZG2MlOHL._SL1500_.jpg" alt="" height="600px" width="100%" class="yash">
+    <img src="https://cutewallpaper.org/21/ant-man-wallpaper/Ant-man-Wallpaper-by-DarthBaren-d1-Free-on-ZEDGE.jpg"  alt="" height="600px" width="100%" class="yash">
+
+
+    <script>
+key=0;
+       function ypm900()
+       {
+        
+
+        var images_array = document.getElementsByClassName('yash');
+        console.log(images_array);
+
+        for(i=0;i<4;i++)
+        {
+        console.log(images_array[i])
+        images_array[i].style.display = "none";
+        }
+
+        console.log(i);
+
+        images_array[key].style.display = "block";
+        key++;
+
+        if(key>=4)
+        {
+            key=0;
+        }
+
+        setTimeout("ypm900()",1500); 
+       }
+
+       ypm900()
+       
+
+
+
+
+    </script>
+    
+</body>
+</html>
