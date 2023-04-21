@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			margin: 0;
+			padding: 0;
+
+		}
+		.a
+		{
+			height: 100px;
+			width: 100%;
+			background: gray;
+		
+		
+			
+		}
+		.a ul
+		{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			line-height: 100px;
+
+			
+		}
+		.a ul li
+		{
+			display: inline;
+			list-style: none;
+			
+		}
+		
+
+		.a ul li a
+		 {
+            font-size: 30px;
+            position: relative;
+            color: #fff;
+            margin-right: 50px;
+            text-decoration: none;
+
+
+
+         }
+
+         .a a::after
+          {
+              content: '';
+              position: absolute;
+              width: 100%;
+              transform: scaleX(0);
+              height: 6px;
+              bottom: -5px;
+              left: 0;
+
+              background-color: black;
+              transform-origin: bottom right;
+              transition: transform 0.2s ease-out;
+         }
+
+         .a a:hover:after
+          {
+           transform: scaleX(1);
+           transform-origin: bottom left;
+           }
+
+
+           .b
+           {
+           	height: 300px;
+           	width: 300px;
+           	background: pink;
+           	background-size: 100% 100%;
+           	margin: auto;
+           	margin-top: 50px;
+           	position: relative;
+           }
+
+
+
+           .b1::after
+           {
+           	
+            content: "";
+           	height: 200px;
+           	width: 200px;
+            
+           	border:5px solid transparent;
+           	top: 40px;
+            left: 10px;
+            position: absolute;
+           
+            transition: 0.5s;
+
+
+           
+           }
+
+           .b .b1:hover:after
+           {
+           	margin-left: 20px;
+           	padding-left: 30px;
+           	border:5px solid black;
+           	 transform: scaleX(1);
+           	 
+
+           }
+         
+
+          
+           
+
+
+
+
+
+
+		
+	</style>
+</head>
+<body>
+	<div class="a">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Services</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Help</a></li>
+		</ul>
+	</div>
+	<div class="b">
+		
+		<div class="b1"></div>
+	</div>
+
+
+</body>
+</html>
